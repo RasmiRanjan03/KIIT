@@ -33,7 +33,7 @@ const Environment = () => {
         setForecastLoading(true);
         const lat = location?.lat || 20.2105;
         const lon = location?.lng || 85.6812;
-        const response = await fetch(`http://localhost:5000/api/weather/forecast?lat=${lat}&lon=${lon}`);
+        const response = await fetch(`https://kiit-sw9j.onrender.com/api/weather/forecast?lat=${lat}&lon=${lon}`);
         const data = await response.json();
         if (data.status === 'success') {
           setForecast(data.data);

@@ -8,7 +8,7 @@ import { toast } from 'sonner';
 import ThreeBackground from '@/components/ThreeBackground';
 import Navbar from '@/components/Navbar';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+const API_URL = import.meta.env.VITE_API_URL ;
 
 const SignupPage = () => {
   const navigate = useNavigate();

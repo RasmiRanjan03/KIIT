@@ -8,7 +8,7 @@ import axios from "axios";
 import { toast } from "@/components/ui/sonner";
 import { cn } from "@/lib/utils";
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+const API_URL = import.meta.env.VITE_API_URL ;
 
 const CarbonFootprint = () => {
   const [showDetails, setShowDetails] = useState(false);
